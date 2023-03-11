@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DES</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js" defer></script>
+</head>
+<body>
+	<div class="panel">
+		<h3 class="panel__header"> DES </h3>
+		<div name="initialData" id="des" class=" initial-data">
+			<label> Текст | DES(hex) </label>
+			<input type="text" name="text" id="text" class="initial-data__text"  required>
+
+			<label> Кодовое слово </label>
+			<input type="text" name="dimensionsCount" id="key" class="initial-data__text"  required>
+			<input type="submit" name="submit" id="encode" class="button" value="Кодировать">
+			<input type="submit" name="submit" id="decode" class="button" value="Декодировать">
+			<br>
+			<br>
+			<label id="result" style="overflow: auto;"></label>
+			<p id="initialDataError">Ошибка</p>
+		</div>
+	</div>
+</body>
+</html>
